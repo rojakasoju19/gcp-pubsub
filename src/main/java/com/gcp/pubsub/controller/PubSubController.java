@@ -41,7 +41,7 @@ public class PubSubController {
 	  return new DirectChannel();
 	  }
 	
-	@Bean
+	
 	  @ServiceActivator(inputChannel = "pubsubInputChannel")
 	  public void receiveMessage(String payload) 
 	{
